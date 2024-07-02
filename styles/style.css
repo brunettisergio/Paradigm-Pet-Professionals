@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0 13% 0 13%;
+    font-family: Roboto, Arial;
+}
+
+nav {
+    position: sticky;
+    display: block;
+    top: 0;
+}
+
+nav,
+.banner {
+    margin: 0 -18% 0 -18%;
+}
+
+#navBar {
+    display: flex;
+    top: 0;
+    margin: 0;
+    padding: 0.5% 0 0.5% 0;
+    background-color: #003b6d;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+nav #logo {
+    width: 3em;
+}
+
+#navBar a:link,
+a:visited,
+.dropdown-content a:link,
+.dropdown-content a:visited,
+.dropdown-btn {
+    color: whitesmoke;
+}
