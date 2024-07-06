@@ -28,18 +28,20 @@
     <body>
         <nav>
             <ul id="navBar">
-                <a href="index.html">
-                    <img
-                        id="logo"
-                        src="./images/logo.png"
-                        alt="Pet Paradigm Professionals logo"
-                    />
-                </a>
+                <li>
+                    <a href="index.html">
+                        <img
+                            id="logo"
+                            src="./images/logo.png"
+                            alt="Pet Paradigm Professionals logo"
+                        />
+                    </a>
+                </li>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li class="dropdown-menu">
-                    <button class="dropdown-btn">Pets</button>
+                    <p class="dropdown-btn">Pets</p>
                     <div class="dropdown-content">
                         <a href="./pages/cats.html">Cats</a>
                         <a href="./pages/dogs.html">Dogs</a>
@@ -47,8 +49,8 @@
                     </div>
                 </li>
                 <li class="dropdown-menu">
-                    <button class="dropdown-btn">Help Center</button>
-                    <div class="'dropdown-content">
+                    <p class="dropdown-btn">Help Center</p>
+                    <div class="dropdown-content">
                         <a href="./pages/faqs.html">FAQs</a>
                         <a href="./pages/contact.html">Contact Us</a>
                     </div>
@@ -65,9 +67,68 @@
                 </li>
             </ul>
         </nav>
+
         <header>
-            <!-- <img src="" alt="" class="banner"> -->
-            <h1 id="title">Pet Paradigm Professionals</h1>
+            <section id="header-content">
+                <h1 id="title">Pet Paradigm Professionals</h1>
+                <section class="contactForm">
+                    <form>
+                        <h2 id="form-title">CONSULT OUR <br />PEXPERTS</h2>
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="Name"
+                        />
+                        <input
+                            type="text"
+                            name="phoneNumber"
+                            id="phoneNumber"
+                            placeholder="Phone Number"
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                        />
+                        <div class="timezone-menu">
+                            <button id="timezone-btn">
+                                Timezone
+                                <div id="timezone-content">
+                                    <!-- TODO Add timezone dropdown content -->
+                                </div>
+                            </button>
+                        </div>
+                        <input
+                            type="text"
+                            name="petName"
+                            id="petName"
+                            placeholder="Pet's Name"
+                        />
+                        <div class="dropdown-menu">
+                            <button class="dropdown-btn">Pet Type</button>
+
+                            <div class="dropdown-content">
+                                <li>Cat</li>
+                                <li>Dog</li>
+                                <li>Fish</li>
+                                <li>Other</li>
+                            </div>
+                        </div>
+                        <input
+                            type="text"
+                            name="petAge"
+                            id="petAge"
+                            placeholder="Pet's Age"
+                        />
+                        <button id="submit-btn">Submit</button>
+                    </form>
+                </section>
+            </section>
+        </header>
+
+        <section id="content">
             <p>
                 Pets are nature's gift to humanity. It has been scientifically
                 proven that opening our homes and hearts to a pet increases our
@@ -88,60 +149,7 @@
                 tailored evidence-based pet care to ensure lifelong health and
                 wellness of your new companion.
             </p>
-            <section class="contactForm">
-                <form id="contactForm">
-                    <input
-                        type="text"
-                        name="firstName"
-                        id="firstName"
-                        placeholder="Name"
-                    />
-                    <input
-                        type="text"
-                        name="phoneNumber"
-                        id="phoneNumber"
-                        placeholder="Phone Number"
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="name@email.com"
-                    />
-                    <div>
-                        <button id="timezone-btn">
-                            <div id="timezone-content">
-                                <!-- TODO Add dropdown content -->
-                            </div>
-                        </button>
-                    </div>
-                    <input
-                        type="text"
-                        name="petName"
-                        id="petName"
-                        placeholder="Pet's Name"
-                    />
-                    <div class="dropdown-menu">
-                        <button class="dropdown-btn">Pet Type</button>
-
-                        <div class="dropdown-content">
-                            <!-- TODO Possible refactor dropdown content -->
-                            <li>Cat</li>
-                            <li>Dog</li>
-                            <li>Fish</li>
-                            <li>Other</li>
-                        </div>
-                    </div>
-                    <input
-                        type="number"
-                        name="petAge"
-                        id="petAge"
-                        placeholder="Pet's Age"
-                    />
-                    <button id="submit-btn">Submit</button>
-                </form>
-            </section>
-        </header>
+        </section>
 
         <footer>
             <table>
