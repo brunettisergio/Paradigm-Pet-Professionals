@@ -1,4 +1,12 @@
 {
-    "cSpell.ignoreWords": ["PEXPERTS"],
+    "cSpell.ignoreWords": [
+        "Bordetella",
+        "Borrelia",
+        "Leptospira",
+        "PEXPERTS",
+        "bronchiseptica",
+        "burgdorferi",
+        "parvovirus"
+    ],
     "cSpell.words": ["ASPCS"]
 }
