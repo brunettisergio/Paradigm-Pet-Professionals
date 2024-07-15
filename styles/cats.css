@@ -4,4 +4,5 @@ header {
 
 .separator-line {
     background-image: url("/assets/paw-icon.png");
+    background-size: 40px 40px;
 }
