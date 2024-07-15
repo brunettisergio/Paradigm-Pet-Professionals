@@ -1,3 +1,7 @@
 header {
     background-image: url("/images/banner-dogs.jpg");
 }
+
+.separator-line {
+    background-image: url("/assets/paw-icon.png");
+}
