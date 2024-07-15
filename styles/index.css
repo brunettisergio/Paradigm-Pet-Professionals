@@ -64,3 +64,17 @@ form button {
 .separator-line {
     background-image: url("/assets/paw-icon.png");
 }
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#showcase img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+}
