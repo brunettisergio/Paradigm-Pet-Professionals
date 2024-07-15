@@ -12,13 +12,24 @@
     align-items: center;
     padding: 0%;
 }
-
-#title {
-    font-size: 4rem;
+#title-and-subtitle {
     position: relative;
     top: -30%;
     margin-left: 5%;
-    color: whitesmoke;
+}
+
+#title {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 5px black;
+}
+
+#subtitle {
+    margin-top: 0;
+    color: #6699cc;
+    text-shadow: 1px 1px 5px black;
+    text-align: left;
 }
 
 .contactForm {
