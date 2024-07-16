@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Script loaded");
     const timezones = [
         { value: "Pacific/Midway", text: "(GMT-11:00) Midway Island, Samoa" },
         { value: "America/Adak", text: "(GMT-10:00) Hawaii-Aleutian" },

@@ -121,6 +121,7 @@ h2 {
 .content {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     border: 3px dotted #003b6d;
@@ -130,7 +131,7 @@ h2 {
     background-color: whitesmoke;
 }
 
-.content:not(:last-child)::after {
+.content:not(:last-of-type)::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -144,20 +145,21 @@ h2 {
 
 .content-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .content p {
-    flex: 1;
-    flex-wrap: wrap;
+    min-width: 0;
+    flex: 1 1 300px;
     font-size: 1.2rem;
 }
 
 .content-img {
     width: 100%;
     max-width: 400px;
+    min-width: 0;
     height: auto;
     object-fit: cover;
     margin: 10px;
@@ -174,4 +176,15 @@ footer {
     text-align: center;
     justify-content: center;
     margin-bottom: 0;
+}
+
+@media (max-width: 560px) {
+    nav #logo {
+        width: 2.5 em;
+        margin-right: 5px;
+    }
+
+    #searchBar {
+        width: 80%;
+    }
 }
