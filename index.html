@@ -118,48 +118,58 @@
                             name="firstName"
                             id="firstName"
                             placeholder="Name"
+                            required
                         />
                         <input
                             type="text"
                             name="phoneNumber"
                             id="phoneNumber"
                             placeholder="Phone Number"
+                            required
                         />
                         <input
                             type="email"
                             name="email"
                             id="email"
                             placeholder="Email"
+                            required
                         />
-                        <div class="timezone-menu">
-                            <button id="timezone-btn">
+                        <select
+                            name="timezone"
+                            id="timezone"
+                            required
+                        >
+                            <option
+                                value=""
+                                disabled
+                                selected
+                            >
                                 Timezone
-                                <div id="timezone-content">
-                                    <!-- TODO Add timezone dropdown content -->
-                                </div>
-                            </button>
-                        </div>
+                            </option>
+                        </select>
                         <input
                             type="text"
                             name="petName"
                             id="petName"
                             placeholder="Pet's Name"
+                            required
                         />
-                        <div class="dropdown-menu">
-                            <button class="dropdown-btn">Pet Type</button>
-
-                            <div class="dropdown-content">
-                                <li>Cat</li>
-                                <li>Dog</li>
-                                <li>Fish</li>
-                                <li>Other</li>
-                            </div>
-                        </div>
+                        <select
+                            name="pet-type"
+                            id="pet-type"
+                            required
+                        >
+                            <option value="Pet's Type">Pet's Type</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Dog">Dog</option>
+                            <option value="Fish">Fish</option>
+                        </select>
                         <input
                             type="text"
                             name="petAge"
                             id="petAge"
                             placeholder="Pet's Age"
+                            required
                         />
                         <button id="submit-btn">Submit</button>
                     </form>
@@ -173,17 +183,15 @@
             <p class="intro">
                 It has been scientifically proven that opening our homes and
                 hearts to a pet increases our longevity and improves our overall
-                quality of life as well as the lives of our pets. At Pet
-                Paradigm Professionals, our mission is to offer resources to
-                help you care for your furry, scaly, feathery, and slimy loved
-                ones.
-                <br /><br />
-                Our pet experts—or “Pexperts”—have been working with pet owners
-                and professionals alike for the past twelve years. They offer
-                one-on-one consultations with current and prospective pet owners
-                as well as group presentations designed for veterinary, pet
-                shelter, and pet breeding professionals.
-                <br /><br />
+                quality of life as well as the lives of our pets. At
+                <b>Pet Paradigm Professionals</b>, our mission is to offer
+                resources to help you care for your furry, scaly, feathery, and
+                slimy loved ones. <br /><br />
+                Our pet experts—or <b>“Pexperts”</b>—have been working with pet
+                owners and professionals alike for the past twelve years. They
+                offer one-on-one consultations with current and prospective pet
+                owners as well as group presentations designed for veterinary,
+                pet shelter, and pet breeding professionals. <br /><br />
                 Looking for basic pet care advice for the most common type of
                 pets? Need additional help determining which type of pet is
                 right for you and your family? We will work with you and provide
@@ -213,7 +221,7 @@
                 <div class="content-info">
                     <p>
                         The following organizations can help you find and adopt
-                        the perfect companion: <br />
+                        the perfect companion: <br /><br />
                         •
                         <a
                             href="https://home-home.org/"
@@ -226,12 +234,7 @@
                             target="_blank"
                             >ASPCA</a
                         ><br />
-                        •
-                        <a
-                            href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"
-                            target="_blank"
-                            >Fish Rescue</a
-                        ><br />
+
                         •
                         <a
                             href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"
@@ -302,4 +305,5 @@
             </table>
         </footer>
     </body>
+    <script src="scripts/timezones.js"></script>
 </html>
