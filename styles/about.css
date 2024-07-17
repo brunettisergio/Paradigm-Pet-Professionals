@@ -1,3 +1,8 @@
+/* header {
+    display: flex;
+    justify-content: space-between;
+} */
+
 .separator-line {
     background-image: url("/assets/paw-icon.png");
 }
@@ -6,6 +11,13 @@ h1 {
     font-size: 4rem;
     position: relative;
     top: -15%;
+    margin-bottom: 0;
     margin-left: 7%;
     color: #6699cc;
+}
+
+#logo2 {
+    display: block;
+    width: 25%;
+    margin: 0 auto 30px auto;
 }
