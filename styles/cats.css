@@ -1,7 +1,7 @@
 header {
-    background-image: url("/images/cat-banner.jpg");
+    background-image: url("../images/cat-banner.jpg");
 }
 
 .separator-line {
-    background-image: url("/assets/paw-icon.png");
+    background-image: url("../assets/paw-icon.png");
 }
